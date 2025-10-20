@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fundamentals Lab - Complete Solutions</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/selectors.css">
+    <link rel="stylesheet" href="styles/typography.css">
+    <link rel="stylesheet" href="styles/backgrounds.css">
+    <link rel="stylesheet" href="styles/images.css">
+    <link rel="stylesheet" href="styles/buttons.css">
+    <link rel="stylesheet" href="styles/forms.css">
+    <link rel="stylesheet" href="styles/cards.css">
+    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/transforms.css">
+    <link rel="stylesheet" href="styles/advanced.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <h1 class="nav-title">CSS Lab Solutions</h1>
+            <ul class="nav-menu">
+                <li><a href="#selectors" class="nav-link">Selectors</a></li>
+                <li><a href="#typography" class="nav-link">Typography</a></li>
+                <li><a href="#backgrounds" class="nav-link">Backgrounds</a></li>
+                <li><a href="#images" class="nav-link">Images</a></li>
+                <li><a href="#buttons" class="nav-link">Buttons</a></li>
+                <li><a href="#forms" class="nav-link">Forms</a></li>
+                <li><a href="#cards" class="nav-link">Cards</a></li>
+                <li><a href="#transforms" class="nav-link">Transforms</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Task 1: CSS Selectors Practice -->
+        <section id="selectors" class="section">
+            <div class="container">
+                <h2 class="section-title">Task 1: CSS Selectors Practice</h2>
+                
+                <div class="selectors-demo">
+                    <h3>Basic Selectors</h3>
+                    <p class="intro-text">This paragraph uses element selector</p>
+                    <p class="highlight-text">This uses class selector</p>
+                    <p id="special-para">This uses ID selector</p>
+                    <span class="accent">Span with accent class</span>
+                    <div class="box">Universal selector applies to all</div>
+
+                    <h3>Attribute Selectors</h3>
+                    <input type="text" placeholder="Text input">
+                    <input type="email" placeholder="Email input">
+                    <a href="https://example.com" class="external-link">External Link</a>
+                    <button data-action="submit">Submit Button</button>
+
+                    <h3>Combinators</h3>
+                    <div class="parent">
+                        <p>Descendant paragraph</p>
+                        <div class="child">
+                            <p>Child paragraph</p>
+                        </div>
+                    </div>
+                    <p class="sibling">First sibling</p>
+                    <p class="sibling">Adjacent sibling</p>
+                    <p class="sibling">General sibling</p>
+
+                    <h3>Pseudo-classes & Pseudo-elements</h3>
+                    <a href="#" class="link-demo">Hover me (link states)</a>
+                    <input type="checkbox" id="check1">
+                    <label for="check1">Check me</label>
+                    <ul class="list-demo">
+                        <li>First item</li>
+                        <li>Second item</li>
+                        <li>Third item</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Task 2: Typography Showcase -->
+        <section id="typography" class="section">
+            <div class="container">
+                <h2 class="section-title">Task 2: Typography Showcase</h2>
+                
+                <div class="typography-grid">
+                    <div class="typo-card">
+                        <h3 class="font-poppins">Poppins Font</h3>
+                        <p class="font-poppins">Modern and clean typography for contemporary designs</p>
+                        <p class="font-poppins small">Small text example</p>
+                        <p class="font-poppins large">Large text example</p>
+                    </div>
+
+                    <div class="typo-card">
+                        <h3 class="font-playfair">Playfair Display</h3>
+                        <p class="font-playfair">Elegant serif font for sophisticated layouts</p>
+                        <p class="font-playfair small">Small text example</p>
+                        <p class="font-playfair large">Large text example</p>
+                    </div>
+
+                    <div class="typo-card">
+                        <h3 class="font-roboto">Roboto Font</h3>
+                        <p class="font-roboto">Versatile sans-serif for all purposes</p>
+                        <p class="font-roboto small">Small text example</p>
+                        <p class="font-roboto large">Large text example</p>
+                    </div>
+                </div>
+
+                <div class="text-effects">
+                    <h3>Text Effects & Transformations</h3>
+                    <p class="text-shadow-effect">Text with shadow effect</p>
+                    <p class="text-uppercase">this text is uppercase</p>
+                    <p class="text-lowercase">THIS TEXT IS LOWERCASE</p>
+                    <p class="text-capitalize">this text is capitalized</p>
+                    <p class="text-center">Center aligned text</p>
+                    <p class="text-justify">This text is justified and will spread across the full width of its container to create an even appearance on both left and right edges.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Task 3: Background Gallery -->
+        <section id="backgrounds" class="section">
+            <div class="container">
+                <h2 class="section-title">Task 3: Background Gallery</h2>
+                
+                <div class="bg-gallery">
+                    <div class="bg-solid">
+                        <h4>Solid Color</h4>
+                    </div>
+
+                    <div class="bg-image">
+                        <h4>Image Background</h4>
+                    </div>
+
+                    <div class="bg-linear-gradient">
+                        <h4>Linear Gradient</h4>
+                    </div>
+
+                    <div class="bg-radial-gradient">
+                        <h4>Radial Gradient</h4>
+                    </div>
+
+                    <div class="bg-multiple">
+                        <h4>Multiple Layers</h4>
+                    </div>
+
+                    <div class="bg-blend">
+                        <h4>Blend Mode</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Task 4: Image Styling Portfolio -->
+        <section id="images" class="section">
+            <div class="container">
+                <h2 class="section-title">Task 4: Image Styling Portfolio</h2>
+                
+                <div class="image-gallery">
+                    <div class="image-card">
+                        <img src="/placeholder.svg?height=250&width=250" alt="Gallery image 1" class="img-rounded">
+                        <p>Rounded Corners</p>
+                    </div>
+
+                    <div class="image-card">
+                        <img src="/placeholder.svg?height=250&width=250" alt="Gallery image 2" class="img-circle">
+                        <p>Circular Image</p>
+                    </div>
+
+                    <div class="image-card">
+                        <img src="/placeholder.svg?height=250&width=250" alt="Gallery image 3" class="img-bordered">
+                        <p>With Border</p>
+                    </div>
+
+                    <div class="image-card">
+                        <img src="/placeholder.svg?height=250&width=250" alt="Gallery image 4" class="img-shadow">
+                        <p>With Shadow</p>
+                    </div>
+
+                    <div class="image-card image-hover">
+                        <img src="/placeholder.svg?height=250&width=250" alt="Gallery image 5" class="img-hover-effect">
+                        <p>Hover Effect</p>
+                    </div>
+
+                    <div class="image-card image-overlay">
+                        <img src="/placeholder.svg?height=250&width=250" alt="Gallery image 6">
+                        <div class="overlay">
+                            <p>Image Overlay</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Task 5: Button Styling Collection -->
+        <section id="buttons" class="section">
+            <div class="container">
+                <h2 class="section-title">Task 5: Button Styling Collection</h2>
+                
+                <div class="button-showcase">
+                    <div class="button-group">
+                        <h4>Primary Buttons</h4>
+                        <button class="btn btn-primary">Primary</button>
+                        <button class="btn btn-primary btn-lg">Large</button>
+                        <button class="btn btn-primary btn-sm">Small</button>
+                    </div>
+
+                    <div class="button-group">
+                        <h4>Secondary Buttons</h4>
+                        <button class="btn btn-secondary">Secondary</button>
+                        <button class="btn btn-secondary btn-lg">Large</button>
+                        <button class="btn btn-secondary btn-sm">Small</button>
+                    </div>
+
+                    <div class="button-group">
+                        <h4>Success Buttons</h4>
+                        <button class="btn btn-success">Success</button>
+                        <button class="btn btn-success btn-lg">Large</button>
+                        <button class="btn btn-success btn-sm">Small</button>
+                    </div>
+
+                    <div class="button-group">
+                        <h4>Danger Buttons</h4>
+                        <button class="btn btn-danger">Danger</button>
+                        <button class="btn btn-danger btn-lg">Large</button>
+                        <button class="btn btn-danger btn-sm">Small</button>
+                    </div>
+
+                    <div class="button-group">
+                        <h4>Button States</h4>
+                        <button class="btn btn-primary">Normal</button>
+                        <button class="btn btn-primary" disabled>Disabled</button>
+                        <button class="btn btn-primary btn-gradient">Gradient</button>
+                    </div>
+
+                    <div class="button-group">
+                        <h4>Rounded Buttons</h4>
+                        <button class="btn btn-primary btn-rounded">Rounded</button>
+                        <button class="btn btn-secondary btn-rounded">Rounded</button>
+                        <button class="btn btn-success btn-rounded">Rounded</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Task 6: Form Styling -->
+        <section id="forms" class="section">
+            <div class="container">
+                <h2 class="section-title">Task 6: Form Styling</h2>
+                
+                <form class="styled-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="Enter your phone number">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="country">Country</label>
+                        <select id="country" required>
+                            <option value="">Select a country</option>
+                            <option value="pk">Pakistan</option>
+                            <option value="us">United States</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="ca">Canada</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Enter your message" rows="5"></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">I agree to the terms and conditions</label>
+                    </div>
+
+                    <div class="form-group radio-group">
+                        <label>
+                            <input type="radio" name="preference" value="email"> Email
+                        </label>
+                        <label>
+                            <input type="radio" name="preference" value="phone"> Phone
+                        </label>
+                        <label>
+                            <input type="radio" name="preference" value="sms"> SMS
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-lg">Submit Registration</button>
+                    <button type="reset" class="btn btn-secondary btn-lg">Clear Form</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Task 7: Card Component Design -->
+        <section id="cards" class="section">
+            <div class="container">
+                <h2 class="section-title">Task 7: Card Component Design</h2>
+                
+                <div class="cards-grid">
+                    <div class="card">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Service 1">
+                        <div class="card-content">
+                            <h3>Web Design</h3>
+                            <p>Create stunning and responsive websites that engage your audience and drive conversions.</p>
+                            <button class="btn btn-primary">Learn More</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Service 2">
+                        <div class="card-content">
+                            <h3>Development</h3>
+                            <p>Build robust and scalable applications using modern technologies and best practices.</p>
+                            <button class="btn btn-primary">Learn More</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Service 3">
+                        <div class="card-content">
+                            <h3>Consulting</h3>
+                            <p>Get expert advice on digital transformation and technology strategy for your business.</p>
+                            <button class="btn btn-primary">Learn More</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Service 4">
+                        <div class="card-content">
+                            <h3>Marketing</h3>
+                            <p>Boost your online presence with data-driven marketing strategies and campaigns.</p>
+                            <button class="btn btn-primary">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Task 8: Navigation Menu Styling -->
+        <section id="navigation" class="section">
+            <div class="container">
+                <h2 class="section-title">Task 8: Navigation Menu Styling</h2>
+                
+                <div class="nav-demo">
+                    <h4>Horizontal Navigation</h4>
+                    <nav class="horizontal-nav">
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li class="dropdown">
+                                <a href="#services">Services</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#design">Design</a></li>
+                                    <li><a href="#development">Development</a></li>
+                                    <li><a href="#consulting">Consulting</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="nav-demo">
+                    <h4>Vertical Navigation</h4>
+                    <nav class="vertical-nav">
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+        <!-- Task 9: CSS Transform Gallery -->
+        <section id="transforms" class="section">
+            <div class="container">
+                <h2 class="section-title">Task 9: CSS Transform Gallery</h2>
+                
+                <div class="transform-gallery">
+                    <div class="transform-item">
+                        <div class="transform-box rotate">
+                            <p>Rotate</p>
+                        </div>
+                    </div>
+
+                    <div class="transform-item">
+                        <div class="transform-box scale">
+                            <p>Scale</p>
+                        </div>
+                    </div>
+
+                    <div class="transform-item">
+                        <div class="transform-box translate">
+                            <p>Translate</p>
+                        </div>
+                    </div>
+
+                    <div class="transform-item">
+                        <div class="transform-box skew">
+                            <p>Skew</p>
+                        </div>
+                    </div>
+
+                    <div class="transform-item">
+                        <div class="transform-box combined">
+                            <p>Combined</p>
+                        </div>
+                    </div>
+
+                    <div class="transform-item">
+                        <div class="transform-box perspective">
+                            <p>3D Effect</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Task 10: Advanced Effects Showcase -->
+        <section id="advanced" class="section">
+            <div class="container">
+                <h2 class="section-title">Task 10: Advanced Effects Showcase</h2>
+                
+                <div class="advanced-effects">
+                    <div class="effect-item">
+                        <h4>Gradient Text</h4>
+                        <p class="gradient-text">Stunning Gradient Text Effect</p>
+                    </div>
+
+                    <div class="effect-item">
+                        <h4>Custom Checkbox</h4>
+                        <div class="custom-checkbox-group">
+                            <input type="checkbox" id="custom1" class="custom-checkbox">
+                            <label for="custom1">Option 1</label>
+                            <input type="checkbox" id="custom2" class="custom-checkbox">
+                            <label for="custom2">Option 2</label>
+                        </div>
+                    </div>
+
+                    <div class="effect-item">
+                        <h4>Loading Animation</h4>
+                        <div class="loader"></div>
+                    </div>
+
+                    <div class="effect-item">
+                        <h4>Complex Shadow</h4>
+                        <div class="shadow-box">
+                            <p>Multi-layer Shadow</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 CSS Lab Solutions - CS 224L Web Technologies</p>
+            <p>University of Engineering & Technology, Peshawar</p>
+        </div>
+    </footer>
+</body>
+</html>

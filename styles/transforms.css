@@ -1,0 +1,105 @@
+/* Task 9: CSS Transform Gallery */
+
+.transform-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.transform-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 250px;
+  background-color: var(--light-bg);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.transform-box {
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, var(--primary-color), #764ba2);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Rotate */
+.rotate:hover {
+  transform: rotate(45deg);
+}
+
+/* Scale */
+.scale:hover {
+  transform: scale(1.5);
+}
+
+/* Translate */
+.translate:hover {
+  transform: translate(20px, 20px);
+}
+
+/* Skew */
+.skew:hover {
+  transform: skew(20deg, 10deg);
+}
+
+/* Combined transformations */
+.combined:hover {
+  transform: rotate(45deg) scale(1.2) translate(10px, 10px);
+}
+
+/* 3D perspective */
+.perspective {
+  perspective: 1000px;
+}
+
+.perspective:hover {
+  transform: rotateX(20deg) rotateY(20deg);
+}
+
+/* Transform origin */
+.transform-origin-top-left {
+  transform-origin: top left;
+}
+
+.transform-origin-center {
+  transform-origin: center;
+}
+
+.transform-origin-bottom-right {
+  transform-origin: bottom right;
+}
+
+/* Transition timing */
+.transition-linear {
+  transition: all 0.3s linear;
+}
+
+.transition-ease {
+  transition: all 0.3s ease;
+}
+
+.transition-ease-in {
+  transition: all 0.3s ease-in;
+}
+
+.transition-ease-out {
+  transition: all 0.3s ease-out;
+}
+
+.transition-ease-in-out {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Cubic bezier */
+.transition-custom {
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}

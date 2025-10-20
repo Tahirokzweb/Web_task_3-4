@@ -1,0 +1,143 @@
+/* Task 7: Card Component Design */
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-content {
+  padding: 25px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-content h3 {
+  margin-bottom: 12px;
+  color: var(--dark-text);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.card-content p {
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+  flex-grow: 1;
+  line-height: 1.6;
+}
+
+.card-content .btn {
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+/* Card variants */
+.card-featured {
+  border: 2px solid var(--primary-color);
+}
+
+.card-featured::before {
+  content: "Featured";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+/* Card with badge */
+.card-badge {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: var(--danger-color);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+/* Card with overlay */
+.card-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card-overlay:hover::after {
+  opacity: 1;
+}
+
+/* Minimal card */
+.card-minimal {
+  box-shadow: none;
+  border: 1px solid var(--border-color);
+}
+
+.card-minimal:hover {
+  box-shadow: var(--shadow);
+}
+
+/* Card with border accent */
+.card-accent {
+  border-left: 4px solid var(--primary-color);
+}
+
+/* Horizontal card */
+.card-horizontal {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-horizontal img {
+  width: 200px;
+  height: auto;
+  min-height: 200px;
+}
+
+.card-horizontal .card-content {
+  flex: 1;
+}

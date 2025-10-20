@@ -1,0 +1,190 @@
+/* Task 8: Navigation Menu Styling */
+
+.nav-demo {
+  margin-bottom: 40px;
+  background-color: var(--light-bg);
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.nav-demo h4 {
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  font-size: 1.1rem;
+}
+
+/* Horizontal Navigation */
+.horizontal-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 0;
+  flex-wrap: wrap;
+}
+
+.horizontal-nav li {
+  position: relative;
+}
+
+.horizontal-nav a {
+  display: block;
+  padding: 15px 20px;
+  color: var(--dark-text);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.horizontal-nav a:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.horizontal-nav li.active a {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Dropdown menu */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  list-style: none;
+  min-width: 200px;
+  box-shadow: var(--shadow);
+  border-radius: 4px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-menu li {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.dropdown-menu li:last-child {
+  border-bottom: none;
+}
+
+.dropdown-menu a {
+  padding: 12px 20px;
+  display: block;
+  color: var(--dark-text);
+}
+
+.dropdown-menu a:hover {
+  background-color: var(--light-bg);
+  color: var(--primary-color);
+}
+
+/* Vertical Navigation */
+.vertical-nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.vertical-nav a {
+  display: block;
+  padding: 15px 20px;
+  color: var(--dark-text);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  border-left: 4px solid transparent;
+}
+
+.vertical-nav a:hover {
+  background-color: var(--light-bg);
+  border-left-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.vertical-nav li.active a {
+  background-color: var(--light-bg);
+  border-left-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+/* Breadcrumb navigation */
+.breadcrumb {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.breadcrumb li {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb li:not(:last-child)::after {
+  content: "/";
+  margin-left: 10px;
+  color: var(--secondary-color);
+}
+
+.breadcrumb a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb li:last-child {
+  color: var(--secondary-color);
+}
+
+/* Pagination */
+.pagination {
+  list-style: none;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.pagination li {
+  display: inline-block;
+}
+
+.pagination a,
+.pagination span {
+  display: block;
+  padding: 10px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  text-decoration: none;
+  color: var(--dark-text);
+  transition: all 0.3s ease;
+}
+
+.pagination a:hover {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.pagination li.active span {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
